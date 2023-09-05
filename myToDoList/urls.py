@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+import tasks.views as tasks_views
 
 urlpatterns = [
+    path('', tasks_views.index, name="home"),
+    path('add-collection/', tasks_views.add_collection, name="add_collection"),
     path('admin/', admin.site.urls),
 ]
