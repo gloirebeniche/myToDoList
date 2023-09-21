@@ -1,0 +1,3 @@
+# creation du superutilisateur
+python manage.py startproject "nom du projet"
+python manage.py createsuperuser
